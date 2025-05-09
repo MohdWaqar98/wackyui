@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : `https://wackyui.vercel.app/`;
+    : "https://wackyui.vercel.app/";
 
 export function OpenInV0Button({
     name,
