@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wackyui.vercel.app/sitemap.xml
