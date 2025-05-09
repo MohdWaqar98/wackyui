@@ -8,7 +8,14 @@ const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
 export function OpenInV0Button({
     name,
     className,
-}: { name: string } & React.ComponentProps<typeof Button>) {
+    onClick,
+}: { name: string; onClick?: () => void } & React.ComponentProps<typeof Button>) {
+    const handleClick = (e: React.MouseEvent) => {
+        if (onClick) {
+            onClick();
+        }
+    };
+
     return (
         <Button
             aria-label="Open in v0"
@@ -22,6 +29,7 @@ export function OpenInV0Button({
                 href={`https://v0.dev/chat/api/open?url=${prePath}/r/${name}.json`}
                 target="_blank"
                 rel="noreferrer"
+                onClick={handleClick}
             >
                 Open in{" "}
                 <svg

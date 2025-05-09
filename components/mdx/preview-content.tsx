@@ -170,7 +170,14 @@ export default function PreviewContent({
                     </a>
 
                     <div className="flex items-center gap-2">
-                        <OpenInV0Button name={openInV0()} />
+                        <OpenInV0Button 
+                            name={openInV0()} 
+                            onClick={() => {
+                                const componentName = openInV0();
+                                console.log(`Opening component ${componentName} in v0`);
+                                // You can add additional functionality here if needed
+                            }}
+                        />
                         <Button
                             ref={terminalButtonRef}
                             onClick={handleTerminalClick}

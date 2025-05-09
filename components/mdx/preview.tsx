@@ -15,7 +15,7 @@ interface PreviewProps {
 
 const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "https://ui.wacky.com";
+  : "https://wackyui.vercel.app/";
 
 export function Preview({
   children,
