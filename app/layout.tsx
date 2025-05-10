@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   title: "WackyUI - Modern React UI Components",
   description: "A beautiful, customizable, and accessible React UI component library built with Next.js and Tailwind CSS",
   keywords: ["React", "UI components", "Next.js", "Tailwind CSS", "Web development", "Frontend", "UI library"],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
-  publisher: "Your Name",
+  authors: [{ name: "Mohd Waqar Ahemed" }],
+  creator: "Mohd Waqar Ahemed",
+  publisher: "Mohd Waqar Ahemed",
   formatDetection: {
     email: false,
     telephone: false,
